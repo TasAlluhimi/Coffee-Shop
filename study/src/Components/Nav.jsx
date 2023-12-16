@@ -21,7 +21,7 @@ function Nav() {
 
   return (
     <>
-        <nav class="flex flex-wrap items-center justify-between p-3">
+        <nav class="flex flex-wrap items-center justify-between p-3 bg-white">
     <div className='text-xl font-bold'>Tasneem shop</div>
     <div class="flex md:hidden">
         <button 

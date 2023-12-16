@@ -91,11 +91,13 @@ function Profile() {
             </div>
            
         </dl>
+        <div className='p-7'>
         <button 
         onClick={()=>{saveClick()}}
         class="md:flex md:w-auto px-4 py-2 bg-[#867070] hover:bg-[#D5B4B4] 
         text-white md:rounded">Save
     </button>
+    </div>
     </div>
     :
     <div class="border-t border-gray-200 px-4 py-5 sm:p-0">
@@ -117,11 +119,13 @@ function Profile() {
                 </dd>
             </div>
         </dl>
-        <button 
+       <div className='p-7'>
+       <button 
         onClick={editClick}
         class="md:flex md:w-auto px-4 py-2 bg-[#867070] hover:bg-[#D5B4B4] 
         text-white md:rounded">Edit
     </button>
+       </div>
     </div>
     }
     
