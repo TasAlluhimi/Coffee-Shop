@@ -39,12 +39,14 @@ function Nav() {
         <Link to="/Coffee"
             class="block md:inline-block hover:text-[#D5B4B4] px-3 py-3 md:border-none text-left">Coffee
         </Link>
-        <Link to="#"
-            class="block md:inline-block hover:text-[#D5B4B4] px-3 py-3 md:border-none text-left">Pricing
+        {isLogged? <Link to="/Profile"
+            class="block md:inline-block hover:text-[#D5B4B4] px-3 py-3 md:border-none text-left">Profile
         </Link>
-        <Link to="#"
-            class="block md:inline-block hover:text-[#D5B4B4] px-3 py-3 md:border-none text-left">Contact
+        : ''}
+        {isLogged? <Link to="/Cart"
+            class="block md:inline-block hover:text-[#D5B4B4] px-3 py-3 md:border-none text-left">Cart
         </Link>
+        : ''}
     </div>
     {isLogged ? <button 
         onClick={log_out}
